@@ -1,32 +1,10 @@
-# Prerequisites
-*.d
+#Remove all folders named .vs in all folders and subfolder of project
+/*/.vs
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#Remove files that generated after build
+/*/x64
+/*/*/x64
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#One "/*/" means that we will enter only 1 time into all folders(only folders) in this folder and search condition
+#Two "/*/*" means that we will enter only 2 times into all folders (only folders) in this folder and search condition
+#Three "/**/" means that we will search in all this folder and all existing inner folders
